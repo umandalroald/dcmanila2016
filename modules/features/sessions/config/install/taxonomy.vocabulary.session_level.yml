@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bqOutxYDWHimJPnxWbsSiJBndQovmDgkOxAQoouFH3o
+name: 'Session level'
+vid: session_level
+description: ''
+hierarchy: 0
+weight: 0
