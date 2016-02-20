@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sessions.body
+    - field.field.node.sessions.field_room
+    - field.field.node.sessions.field_session_level
+    - field.field.node.sessions.field_time_slot
+    - node.type.sessions
+  module:
+    - text
+    - user
+id: node.sessions.default
+targetEntityType: node
+bundle: sessions
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_room:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_session_level:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_time_slot:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  links:
+    weight: 100
+hidden: {  }
