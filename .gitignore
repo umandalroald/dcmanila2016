@@ -1,0 +1,10 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+# Ingore sass cache and node_modules
+themes/vielsoft/.sass-cache/
+themes/vielsoft/node_modules/
