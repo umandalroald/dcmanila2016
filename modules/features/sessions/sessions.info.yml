@@ -7,5 +7,6 @@ dependencies:
   - menu_ui
   - node
   - path
+  - sessions
   - text
   - user

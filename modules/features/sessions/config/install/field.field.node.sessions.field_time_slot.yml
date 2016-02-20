@@ -6,6 +6,8 @@ dependencies:
     - node.type.sessions
   module:
     - text
+_core:
+  default_config_hash: ABMoIQyTTUWbExBYR4N1XM1XJFSEQjo2Thmddu8StnI
 id: node.sessions.field_time_slot
 field_name: field_time_slot
 entity_type: node

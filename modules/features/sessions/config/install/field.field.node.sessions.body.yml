@@ -6,6 +6,8 @@ dependencies:
     - node.type.sessions
   module:
     - text
+_core:
+  default_config_hash: pQAkvrRrz5rjFkAeux4WbFeWL4--Nywdaa4plqSp15w
 id: node.sessions.body
 field_name: body
 entity_type: node

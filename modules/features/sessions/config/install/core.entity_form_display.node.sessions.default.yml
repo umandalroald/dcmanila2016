@@ -10,6 +10,8 @@ dependencies:
   module:
     - path
     - text
+_core:
+  default_config_hash: gP3bSx2zl0BF79pDms_HP_j5HPEaU6R6OuYODmi8dDI
 id: node.sessions.default
 targetEntityType: node
 bundle: sessions
