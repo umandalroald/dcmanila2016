@@ -21,3 +21,4 @@ regions:
 
 libraries:
   - 'dcmanila/global-styling'
+  - 'dcmanila/dcmanila-styling'

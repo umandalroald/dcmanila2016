@@ -2,3 +2,8 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+
+dcmanila-styling:
+  css:
+    theme:
+      stylesheets/style.css: {}
