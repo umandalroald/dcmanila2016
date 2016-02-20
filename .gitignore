@@ -5,6 +5,5 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 
-# Ingore sass cache and node_modules
-themes/vielsoft/.sass-cache/
-themes/vielsoft/node_modules/
+# Ingore sass cache
+themes/dcmanila/.sass-cache/
