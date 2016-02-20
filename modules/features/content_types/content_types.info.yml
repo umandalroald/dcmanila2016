@@ -1,6 +1,0 @@
-name: 'Content types'
-type: module
-core: 8.x
-dependencies:
-  - node
-version: 8.x-1.0

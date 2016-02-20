@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: 'Session level'
-vid: session_level
-description: ''
-hierarchy: 0
-weight: 0
