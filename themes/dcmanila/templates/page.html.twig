@@ -62,14 +62,27 @@
  * @see html.html.twig
  */
 #}
+{% if page.top_header %}
+  <header class="header-top">
+   	<div class="row inner-header-top">
+      <div class="small-5 medium-5 large-5 columns">
+	  	{% if linked_site_name or linked_logo %}
+        {% if linked_logo %}
+          {{ linked_logo }}
+        {% endif %}
+        
+        {% if is_front %}
+          <h1 id="site-name">{{ linked_site_name }}</h1>
+        {% else %}
+          <div id="site-name">{{ linked_site_name }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+    </div>
+  </header>
+{% endif %}
 
 <section class="off-canvas-wrap" data-offcanvas>
-  {% if page.top_header %}
-      <div class="row">
-        <div class="small-12 medium-12 large-12 columns">
-        </div>
-      </div>
-  {% endif %}
 
 
   <div class="inner-wrap">
@@ -93,22 +106,6 @@
         {% endif %}
       {% endif %}
 
-      <header class="row">
-        {% if linked_site_name or linked_logo %}
-          <div class="large-2 columns">
-            {% if linked_logo %}
-              {{ linked_logo }}
-            {% endif %}
-          </div>
-          <div class="large-4 columns">
-            {% if is_front %}
-              <h1 id="site-name">{{ linked_site_name }}</h1>
-            {% else %}
-              <div id="site-name">{{ linked_site_name }}</div>
-            {% endif %}
-          </div>
-        {% endif %}
-      </header>
 
       {% if page.header %}
         <div class="row">
