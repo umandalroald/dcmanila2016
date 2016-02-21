@@ -1,7 +1,7 @@
 <?php
 
-/* core/themes/stable/templates/navigation/menu--toolbar.html.twig */
-class __TwigTemplate_9eeeb28a10909411d5900bdb78fcbd4fc8a63cfbbdfa302bd06f9bf415ac1e6d extends Twig_Template
+/* core/themes/stable/templates/navigation/menu.html.twig */
+class __TwigTemplate_8a1b3c4d093ac62e911331fe95cc1b12f0f4fd8e824ef6796c4c630ed4ce04a7 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -15,13 +15,13 @@ class __TwigTemplate_9eeeb28a10909411d5900bdb78fcbd4fc8a63cfbbdfa302bd06f9bf415a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("import" => 21, "macro" => 29, "if" => 31, "for" => 37, "set" => 39);
+        $tags = array("import" => 21, "macro" => 29, "if" => 31, "for" => 37);
         $filters = array();
-        $functions = array("link" => 47);
+        $functions = array("link" => 39);
 
         try {
             $this->env->getExtension('sandbox')->checkSecurity(
-                array('import', 'macro', 'if', 'for', 'set'),
+                array('import', 'macro', 'if', 'for'),
                 array(),
                 array('link')
             );
@@ -52,13 +52,13 @@ class __TwigTemplate_9eeeb28a10909411d5900bdb78fcbd4fc8a63cfbbdfa302bd06f9bf415a
     }
 
     // line 29
-    public function getmenu_links($__items__ = null, $__attributes__ = null, $__menu_level__ = null, ...$__varargs__)
+    public function getmenu_links($__items__ = null, $__attributes__ = null, $__menu_level__ = null)
     {
         $context = $this->env->mergeGlobals(array(
             "items" => $__items__,
             "attributes" => $__attributes__,
             "menu_level" => $__menu_level__,
-            "varargs" => $__varargs__,
+            "varargs" => func_num_args() > 3 ? array_slice(func_get_args(), 3) : array(),
         ));
 
         $blocks = array();
@@ -76,12 +76,12 @@ class __TwigTemplate_9eeeb28a10909411d5900bdb78fcbd4fc8a63cfbbdfa302bd06f9bf415a
                 if (((isset($context["menu_level"]) ? $context["menu_level"] : null) == 0)) {
                     // line 33
                     echo "      <ul";
-                    echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["attributes"]) ? $context["attributes"] : null), "addClass", array(0 => "toolbar-menu"), "method"), "html", null, true));
+                    echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["attributes"]) ? $context["attributes"] : null), "html", null, true));
                     echo ">
     ";
                 } else {
                     // line 35
-                    echo "      <ul class=\"toolbar-menu\">
+                    echo "      <ul>
     ";
                 }
                 // line 37
@@ -90,37 +90,30 @@ class __TwigTemplate_9eeeb28a10909411d5900bdb78fcbd4fc8a63cfbbdfa302bd06f9bf415a
                 $context['_seq'] = twig_ensure_traversable((isset($context["items"]) ? $context["items"] : null));
                 foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
                     // line 38
-                    echo "      ";
-                    // line 39
-                    $context["classes"] = array(0 => "menu-item", 1 => (($this->getAttribute(                    // line 41
-$context["item"], "is_expanded", array())) ? ("menu-item--expanded") : ("")), 2 => (($this->getAttribute(                    // line 42
-$context["item"], "is_collapsed", array())) ? ("menu-item--collapsed") : ("")), 3 => (($this->getAttribute(                    // line 43
-$context["item"], "in_active_trail", array())) ? ("menu-item--active-trail") : ("")));
-                    // line 46
                     echo "      <li";
-                    echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute($this->getAttribute($context["item"], "attributes", array()), "addClass", array(0 => (isset($context["classes"]) ? $context["classes"] : null)), "method"), "html", null, true));
+                    echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute($context["item"], "attributes", array()), "html", null, true));
                     echo ">
         ";
-                    // line 47
+                    // line 39
                     echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->env->getExtension('drupal_core')->getLink($this->getAttribute($context["item"], "title", array()), $this->getAttribute($context["item"], "url", array())), "html", null, true));
                     echo "
         ";
-                    // line 48
+                    // line 40
                     if ($this->getAttribute($context["item"], "below", array())) {
-                        // line 49
+                        // line 41
                         echo "          ";
                         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->renderVar($context["menus"]->getmenu_links($this->getAttribute($context["item"], "below", array()), (isset($context["attributes"]) ? $context["attributes"] : null), ((isset($context["menu_level"]) ? $context["menu_level"] : null) + 1))));
                         echo "
         ";
                     }
-                    // line 51
+                    // line 43
                     echo "      </li>
     ";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 53
+                // line 45
                 echo "    </ul>
   ";
             }
@@ -135,7 +128,7 @@ $context["item"], "in_active_trail", array())) ? ("menu-item--active-trail") : (
 
     public function getTemplateName()
     {
-        return "core/themes/stable/templates/navigation/menu--toolbar.html.twig";
+        return "core/themes/stable/templates/navigation/menu.html.twig";
     }
 
     public function isTraitable()
@@ -145,13 +138,13 @@ $context["item"], "in_active_trail", array())) ? ("menu-item--active-trail") : (
 
     public function getDebugInfo()
     {
-        return array (  124 => 53,  117 => 51,  111 => 49,  109 => 48,  105 => 47,  100 => 46,  98 => 43,  97 => 42,  96 => 41,  95 => 39,  93 => 38,  88 => 37,  84 => 35,  78 => 33,  75 => 32,  72 => 31,  69 => 30,  55 => 29,  48 => 27,  45 => 22,  43 => 21,);
+        return array (  117 => 45,  110 => 43,  104 => 41,  102 => 40,  98 => 39,  93 => 38,  88 => 37,  84 => 35,  78 => 33,  75 => 32,  72 => 31,  69 => 30,  55 => 29,  48 => 27,  45 => 22,  43 => 21,);
     }
 }
 /* {#*/
 /* /***/
 /*  * @file*/
-/*  * Theme override to display a toolbar menu.*/
+/*  * Theme override to display a menu.*/
 /*  **/
 /*  * Available variables:*/
 /*  * - menu_name: The machine name of the menu.*/
@@ -180,20 +173,12 @@ $context["item"], "in_active_trail", array())) ? ("menu-item--active-trail") : (
 /*   {% import _self as menus %}*/
 /*   {% if items %}*/
 /*     {% if menu_level == 0 %}*/
-/*       <ul{{ attributes.addClass('toolbar-menu') }}>*/
+/*       <ul{{ attributes }}>*/
 /*     {% else %}*/
-/*       <ul class="toolbar-menu">*/
+/*       <ul>*/
 /*     {% endif %}*/
 /*     {% for item in items %}*/
-/*       {%*/
-/*         set classes = [*/
-/*           'menu-item',*/
-/*           item.is_expanded ? 'menu-item--expanded',*/
-/*           item.is_collapsed ? 'menu-item--collapsed',*/
-/*           item.in_active_trail ? 'menu-item--active-trail',*/
-/*         ]*/
-/*       %}*/
-/*       <li{{ item.attributes.addClass(classes) }}>*/
+/*       <li{{ item.attributes }}>*/
 /*         {{ link(item.title, item.url) }}*/
 /*         {% if item.below %}*/
 /*           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}*/
