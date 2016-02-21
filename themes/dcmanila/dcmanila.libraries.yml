@@ -1,9 +1,10 @@
-global-styling:
+global:
+  version: VERSION
   css:
-    theme:
-      css/style.css: {}
-
-dcmanila-styling:
-  css:
-    theme:
-      stylesheets/style.css: {}
+    base:
+      css/dcmanila.css: {}
+  js:
+    js/dcmanila.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
