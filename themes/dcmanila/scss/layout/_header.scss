@@ -1,3 +1,5 @@
+$yesteryear: 'Yesteryear', cursive;
+$raleway: 'Raleway', sans-serif;
 // Non-modular or client styles for .l-header region.
 .header-top {
 	background-color: #000000;
@@ -21,7 +23,7 @@
 	}	
 }
 
-#block-front-camp-title {
+#block-banner {
 	background-image: url('../images/bg_front_banner.jpg');
 	background-size: cover;
 	.field-block-content--body {
@@ -29,19 +31,19 @@
 	}
 	.front_banner_left {
 		float:left;
-		@extend .large-8;
-		margin-top: 250px; 
-		margin-bottom: 50px;		
-	}
-	.front_banner_right {
-		float:left;
 		@extend .large-4; 
 		margin-top: 200px;
 		margin-bottom: 50px;		
 	}
+	.front_banner_right {
+		float:left;
+		@extend .large-8;
+		margin-top: 250px; 
+		margin-bottom: 50px;		
+	}
 	.front_line_1 {
 		  font-size: 30px;
-		  font-family: "Raleway";
+		  font-family: $raleway;
 		  color: rgb(187, 220, 229);
 		  font-weight: bold;
 		  line-height: 1.667;
@@ -56,17 +58,21 @@
 	}
 	.front_line_2 {
 	  font-size: 30px;
-	  font-family: "Yesteryear";
+	  font-family: $yesteryear;
 	  color: rgb(255, 255, 255);
 	  line-height: 1.667;
 	  text-align: center;
 	  -moz-transform: matrix( 8.53343358383897,-2.28652663745427,2.28652663745428,8.53343358383897,0,0);
 	  -webkit-transform: matrix( 8.53343358383897,-2.28652663745427,2.28652663745428,8.53343358383897,0,0);
 	  -ms-transform: matrix( 8.53343358383897,-2.28652663745427,2.28652663745428,8.53343358383897,0,0);
+	  text-transform: lowercase;
+	  .manila_capital {
+	  	text-transform: capitalize;
+	  }
 	}
 	.front_line_3 {
 	  font-size: 30px;
-	  font-family: "Raleway";
+	  font-family: $raleway;
 	  color: rgb(187, 220, 229);
 	  font-weight: bold;
 	  line-height: 1.667;
@@ -82,7 +88,7 @@
 		height: 100px;
 		a {
 		  font-size: 60px;
-		  font-family: "Raleway";
+		  font-family: $raleway;
 		  color: rgb(255, 255, 255);
 		  line-height: 0.394;
 		  -moz-transform: matrix( 0.45725464087805,0,0,0.45562869674365,0,0);
