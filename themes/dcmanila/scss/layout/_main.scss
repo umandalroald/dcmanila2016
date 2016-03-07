@@ -1,1 +1,178 @@
 // Non-modular or client styles for the .l-content region.
+$raleway: 'Raleway', sans-serif;
+$dark-blue: #002b48;
+$dark-orange: #e37b46;
+$dark-yellow: #f3bf54;
+
+// Front Page
+h2.block-title {
+	font-family: $raleway;
+	font-weight: 800;
+	color: $dark-blue;
+	border-bottom: 5px solid $dark-yellow;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+section.views-element-container {
+	margin-bottom: 30px;
+}
+
+.block-views-block-sessions-block-1 {
+	.views-row {
+		float:left;
+		@extend .large-6;
+		.views-field-field-photo {
+			@extend .large-4;
+			@extend .column;			
+			float:left;
+			img {
+				display: block;
+				-webkit-border-radius: 100px;
+				-moz-border-radius: 100px;
+				-o-border-radius: 100px;
+				border-radius: 100px;
+				margin-bottom: 100px;
+				width: 90%;
+			}
+			
+		}
+		.views-field-title  {
+			@extend .large-8;
+			@extend .column;			
+			float:left;
+			margin-right:0;
+			a {
+				font-size: 26px;
+				color: $dark-blue;
+				font-weight: 800;
+				line-height: 28px;
+				text-transform: uppercase;		
+			}
+		}
+		.views-field-field-speaker	{
+			@extend .large-8;
+			@extend .column;								
+			float:left;				
+			margin-right:0;	
+			a {			
+				font-size: 18px;
+				color: $dark-blue;
+				font-weight: 800;				
+			}
+		}
+		.views-field-field-schedule {
+			@extend .large-3;			
+			@extend .column;						
+			float:left;		
+			margin-right:0;	
+			
+			font-size: 18px;
+			color: $dark-orange;
+			font-weight: regular;			
+		}
+		.views-field-field-schedule-end {
+			@extend .large-3;			
+			@extend .column;						
+			float:left;		
+			margin-right:0;				
+			
+			color: $dark-orange;		
+			font-size: 18px;
+			font-weight: regular;
+		}
+		.views-field-field-room-no {
+			@extend .large-8;			
+			@extend .column;						
+			float:left;		
+			margin-right:0;	
+			
+			color: $dark-orange;						
+			font-weight: regular;
+			.views-label-field-room-no {
+				float:left;
+				text-transform: uppercase;
+				margin-right: 10px;
+			}	
+			.field-content {
+				float:left;
+			}	
+		}
+		.views-field-field-level {
+			@extend .large-8;			
+			@extend .column;						
+			float: left !important;		
+			margin-right:0;		
+			a {
+				font-weight: 800;
+				font-size: 14px;
+				color: $dark-orange;
+				text-transform: uppercase;	
+			}
+			
+		}
+	}
+	@extend .row;
+}
+
+.block-views-block-updates-block-1 {
+	font-size: 24px;
+	header {
+		@extend .column;
+		margin: 0px 0 30px 0;
+	}
+	.views-row {
+		float:left;
+		@extend .large-4;
+		@extend .column;
+		margin-left: 0;
+		.views-field-title {
+			a {
+				font-size: 30px;
+				font-weight: 800;
+				color: $dark-blue;
+			}
+		}
+	}
+	.views-more-link {
+		display:block;
+		font-size: 14px;
+		padding: 5px;
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: $dark-blue;
+		color: white;
+		width: 100px;
+		text-align: center;
+	}
+	@extend .row;
+}
+
+.block-views-block-sponsors-block-1 {
+	.views-row {
+		float:left;
+		@extend .large-4;
+		@extend .column;
+		margin-left: 0;
+		.views-field-title {
+			a {
+				font-size: 30px;
+				font-weight: 800;
+				color: $dark-blue;
+			}
+		}
+	}
+	@extend .row;
+
+}
+
+
+
+
+//Footer 
+.bottom-bar {
+	background-color: $dark-blue;
+	margin-bottom: 0;
+	color: white;
+	padding: 30px 0;
+}
