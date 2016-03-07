@@ -21,9 +21,9 @@ section.views-element-container {
 .block-views-block-sessions-block-1 {
 	.views-row {
 		float:left;
-		@extend .large-6;
+		@include grid-column(6);
 		.views-field-field-photo {
-			@extend .large-4;
+			@include grid-column(4);
 			@extend .column;			
 			float:left;
 			img {
@@ -38,7 +38,7 @@ section.views-element-container {
 			
 		}
 		.views-field-title  {
-			@extend .large-8;
+			@include grid-column(8);
 			@extend .column;			
 			float:left;
 			margin-right:0;
@@ -51,7 +51,7 @@ section.views-element-container {
 			}
 		}
 		.views-field-field-speaker	{
-			@extend .large-8;
+			@include grid-column(8);
 			@extend .column;								
 			float:left;				
 			margin-right:0;	
@@ -62,7 +62,7 @@ section.views-element-container {
 			}
 		}
 		.views-field-field-schedule {
-			@extend .large-3;			
+			@include grid-column(3);
 			@extend .column;						
 			float:left;		
 			margin-right:0;	
@@ -72,7 +72,7 @@ section.views-element-container {
 			font-weight: regular;			
 		}
 		.views-field-field-schedule-end {
-			@extend .large-3;			
+			@include grid-column(3);
 			@extend .column;						
 			float:left;		
 			margin-right:0;				
@@ -82,7 +82,7 @@ section.views-element-container {
 			font-weight: regular;
 		}
 		.views-field-field-room-no {
-			@extend .large-8;			
+			@include grid-column(8);		
 			@extend .column;						
 			float:left;		
 			margin-right:0;	
@@ -99,7 +99,7 @@ section.views-element-container {
 			}	
 		}
 		.views-field-field-level {
-			@extend .large-8;			
+			@include grid-column(8);		
 			@extend .column;						
 			float: left !important;		
 			margin-right:0;		
@@ -112,7 +112,7 @@ section.views-element-container {
 			
 		}
 	}
-	@extend .row;
+	@include grid-row();
 }
 
 .block-views-block-updates-block-1 {
@@ -123,7 +123,7 @@ section.views-element-container {
 	}
 	.views-row {
 		float:left;
-		@extend .large-4;
+		@include grid-column(4);
 		@extend .column;
 		margin-left: 0;
 		.views-field-title {
@@ -145,13 +145,13 @@ section.views-element-container {
 		width: 100px;
 		text-align: center;
 	}
-	@extend .row;
+	@include grid-row();
 }
 
 .block-views-block-sponsors-block-1 {
 	.views-row {
 		float:left;
-		@extend .large-4;
+		@include grid-column(4);
 		@extend .column;
 		margin-left: 0;
 		.views-field-title {
@@ -162,7 +162,7 @@ section.views-element-container {
 			}
 		}
 	}
-	@extend .row;
+	@include grid-row();
 
 }
 

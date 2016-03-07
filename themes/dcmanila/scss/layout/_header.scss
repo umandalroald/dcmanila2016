@@ -23,21 +23,101 @@ $raleway: 'Raleway', sans-serif;
 	}	
 }
 
+#block-topiconmenu {
+	width: 100%;
+	margin:0;
+	padding:3px;
+	position: absolute;
+	z-index: 9999;
+	background-color: rgba(255,186,0,0.10);
+		
+	& > div {
+		@include grid-row();
+		@include grid-column(12);
+		float: none !important;		
+	}
+	ul.icon_menus {
+		width: 100%;
+		li {
+			position: relative;
+			list-style: none;
+			float:left;
+			display: block;
+			width: 20%;			
+			a {
+				display: block;
+				width: 100%;
+				color: white;
+				height: 80px;
+				font-family: $raleway;
+				font-weight: regular;
+				text-transform: uppercase;
+				background-image: url(../images/menu_icons.png);
+				background-repeat: no-repeat;
+				background-position: center top;
+				transition: 1s;
+				.icon_menu_text {
+					position: absolute;
+					bottom: 0px;
+					text-align: center;
+					width: 100%;
+				}
+				&:hover {
+					color: #ff6600;
+				}
+			}
+		}
+		.menu_sessions a {
+			background-position-y: 0px;			
+		}
+		.menu_sponsors a {
+			background-position-y: -95px;
+		}
+		.menu_attend a {
+			background-position-y: -195px;			
+		}
+		.menu_locate a {
+			background-position-y: -295px;				
+		}
+		.menu_update a {
+			background-position-y: -390px;							
+		}
+
+		.menu_sessions a:hover {
+			background-position-y: 5px;			
+		}
+		.menu_sponsors a:hover {
+			background-position-y: -90px;
+		}
+		.menu_attend a:hover {
+			background-position-y: -190px;			
+		}
+		.menu_locate a:hover {
+			background-position-y: -290px;				
+		}
+		.menu_update a:hover {
+			background-position-y: -385px;							
+		}
+
+		
+	}
+}
+
 #block-banner {
 	background-image: url('../images/bg_front_banner.jpg');
 	background-size: cover;
 	.field-block-content--body {
-		@extend .row;
+		@include grid-row();
 	}
 	.front_banner_left {
 		float:left;
-		@extend .large-4; 
+		@include grid-column(4);
 		margin-top: 200px;
 		margin-bottom: 50px;		
 	}
 	.front_banner_right {
 		float:left;
-		@extend .large-8;
+		@include grid-column(8);
 		margin-top: 250px; 
 		margin-bottom: 50px;		
 	}
