@@ -1,0 +1,10 @@
+name: State Machine Test
+type: module
+# core: 8.x
+hidden: true
+
+# Information added by Drupal.org packaging script on 2015-12-25
+version: '8.x-1.0-beta1'
+core: '8.x'
+project: 'state_machine'
+datestamp: 1451039355
